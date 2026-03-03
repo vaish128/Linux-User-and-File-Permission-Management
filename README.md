@@ -1,97 +1,114 @@
-# Project 3: Linux User and File Permission Management
+# Project : Linux User and File Permission Management
 
 ## Project Description
+
 This project focuses on managing users, groups, and file permissions in a Linux environment. It demonstrates how to control access to files and directories using Linux commands to ensure system security.
 
 ---
 
 ## Skills Gained
-- Managing users and group permissions
-- Managing directory permissions
-- Managing file permissions
-- Controlling access to files
-- Controlling access to directories
+
+• managing users and group permissions  
+• Managing directory permission  
+• managing file permission  
+• control access to files  
+• control access to directories  
 
 ---
 
 ## 1. Types of Files
 
-### 1.1 User Defined Files
-User-defined files are created by users and are human readable.
+### 1. User Defined Files:
+User Defined Files are created by user which are human readable
 
-#### Types:
-1. **Normal File** – Created using:
-   `touch`, `vim`, `cat`, `nano`
+### Types of User Defined Files:
 
-2. **Directory File** – Created using:
-   `mkdir`
+1. Normal File : It create by touch vim cat nano  
+2. Directory File : It create by mkdir  
+3. Link File : create by ln  
 
-3. **Link File** – Created using:
-   `ln`
+There are two types of link file:
 
-##### Types of Links:
+• Hard Link : Link count 2 or more and they look like normal which first character in permission string is -  
 
-- **Hard Link**
-  - Link count: 2 or more
-  - Looks like a normal file
-  - First character in permission string: `-`
-
-- **Soft Link (Symbolic Link)**
-  - Link count: 1
-  - First character in permission string: `l`
+• Soft Link: Link count 1 and the first character in the permissions string is l  
 
 ---
 
-### 1.2 System Defined Files
-System-defined files are created by the system.
+### 2. System Defined Files:
+System Defined file are created by system  
 
-#### Types:
-- **Character File** → First character: `c`
-- **Block File** → First character: `b`
-- **Socket File** → First character: `s`
-- **Pipe File** → First character: `p`
+### Types of System Defined Files:
 
----
-
-## 2. Types of Permissions
-
-1. Owner Permission
-2. Group Permission
-3. Others Permission
+1. Character File : The first character in the permissions string is c  
+2. Block files: The first character in the permissions string is b  
+3. Socket file: The first character in the permissions string is s  
+4. Pipe file: The first character in the permissions string is p  
 
 ---
 
-## Checking File Permissions
+## 2. Types of Permission
 
-### View File Permission
-Use:
-`ls -ltr sample`
-
-📷 Output:
-![File Permission Output](image1.png)
+1. Owner Permission  
+2. Group Permission  
+3. Others Permission  
 
 ---
 
-### View Directory Permission
-Use:
-`ls -ltr -d project`
+• ls -ltr sample : It use for see the permission of file  
 
-📷 Output:
-![Directory Permission Output](image2.png)
+![Image](image1.png)
 
 ---
 
-## Important Observations
+• ls -ltr -d project: It use for see the permission of directory  
 
-- Hard link has link count 2 and looks like normal file.
-- Soft link has link count 1 and starts with `lr`.
-- Directory files start with `d`.
-- Normal files start with `-`.
-- Link count increases when a directory is added inside a directory.
-- Link count does NOT increase when a file is added.
-- The 5th field in `ls -ltr` output indicates file size.
+![Image](image2.png)
 
 ---
 
-## Student Details
-**Name:** Vaishnavi Mule
+• Hardlink has link count 2 and it looks like normal  
+
+![Image](image3.png)
+
+---
+
+• Softlink has link count 1 and it start with lr  
+
+![Image](image4.png)
+
+---
+
+• Directory file string with d  
+
+![Image](image5.png)
+
+---
+
+• Normal Files strating with -  
+
+![Image](image6.png)
+
+---
+
+• Link Count is incresing when we perform some action in directory  
+
+For Example: When we add directory in directory, So link count is increase  
+
+![Image](image7.png)
+
+---
+
+• when we add file in directory , link count doesn’t increase  
+
+![Image](image8.png)
+
+---
+
+• 5th field is indicated as size of file  
+
+![Image](image9.png)
+
+---
+
+## NAME : VAISHNAVI MULE
